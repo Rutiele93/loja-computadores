@@ -1,59 +1,77 @@
-# LojaComputadores
+# Loja de Computadores 🖥️
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.7.
+Este projeto foi desenvolvido utilizando o framework **Angular** e tem como objetivo criar uma plataforma para exibição e compra de computadores e acessórios.
 
-## Development server
+## 📌 Tecnologias Utilizadas
+- **Angular 19.1.7** - Framework principal para o desenvolvimento do front-end
+- **Angular Material** - Para componentes visuais modernos e responsivos
+- **RxJS** - Para manipulação de eventos assíncronos e reatividade
+- **NGX-Mask** - Para mascaramento de campos de formulário
+- **TypeScript** - Linguagem base do Angular
+- **HTML5 & CSS3** - Para estruturação e estilização da interface
 
-To start a local development server, run:
+## 📂 Estrutura do Projeto
+A estrutura de diretórios do projeto segue a organização padrão do Angular, com alguns módulos separados para melhor modularização:
 
-```bash
-ng serve
+```
+loja-computadores/
+│-- src/
+│   ├── app/
+│   │   ├── barra-pesquisa/      # Componente de busca de produtos
+│   │   ├── carrinho/            # Módulo do carrinho de compras
+│   │   ├── contato/             # Página de contato
+│   │   ├── footer/              # Rodapé da aplicação
+│   │   ├── header/              # Cabeçalho da aplicação
+│   │   ├── nao-encontrado/      # Página de erro 404
+│   │   ├── produtos/            # Listagem e exibição de produtos
+│   │   ├── app.component.ts     # Componente principal da aplicação
+│   │   ├── app.routes.ts        # Configuração das rotas
+│   │   ├── app.config.ts        # Configurações globais
+│   │   ├── services/
+│   │   │   ├── carrinho.service.ts          # Serviço para gerenciar o carrinho
+│   │   │   ├── notificacao.service.ts       # Serviço para notificações ao usuário
+│   │   │   ├── produtos-service.service.ts  # Serviço para manipulação dos produtos
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 🚀 Funcionalidades Principais
+- **Listagem de Produtos**: Exibição de produtos disponíveis para compra.
+- **Carrinho de Compras**: Adicionar, remover e visualizar itens no carrinho.
+- **Pesquisa de Produtos**: Filtro dinâmico para encontrar produtos rapidamente.
+- **Notificações**: Feedback visual ao usuário sobre ações realizadas.
+- **Sistema de Rotas**: Navegação entre páginas utilizando o roteamento do Angular.
 
-## Code scaffolding
+## 📌 Como Executar o Projeto
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/Rutiele93/loja-computadores.git
+   cd loja-computadores
+   ```
+2. **Instale as dependências:**
+   ```bash
+   npm install
+   ```
+3. **Execute o servidor de desenvolvimento:**
+   ```bash
+   ng serve
+   ```
+4. **Acesse no navegador:**
+   ```
+   http://localhost:4200/
+   ```
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 🛠️ Comandos Úteis
+- **Construir o projeto:**
+  ```bash
+  ng build
+  ```
+- **Executar testes unitários:**
+  ```bash
+  ng test
+  ```
 
-```bash
-ng generate component component-name
-```
+## 📌 Considerações Finais
+Este projeto foi desenvolvido com foco em boas práticas e modularização no Angular. Caso tenha sugestões ou queira contribuir, fique à vontade para abrir uma issue ou pull request no [repositório](https://github.com/Rutiele93/loja-computadores).
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
+🚀 Desenvolvido com 💙 por [Rutiele93](https://github.com/Rutiele93) 💻
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
